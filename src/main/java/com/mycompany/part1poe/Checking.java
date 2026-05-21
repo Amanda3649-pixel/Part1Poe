@@ -48,7 +48,7 @@ public class Checking {
 public boolean checkUserName(String username){
     // To say it contains an underscore (previous exercises and w3schools)
     //also, char is a data type for character, as in the special character
-    if (!username.contains("_") ||username.length() <= 5 ){
+    if (!username.contains("_") ||username.length() >= 5 ){
         return false; // if the username doesn't contain _ and is higher than five return false
     }
     for (int i = 0; i < username.length(); i++) { //incrementing, checking each character one by one
